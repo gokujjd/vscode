@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <title>registrastion Form</title>
+    <style>
+      form div {
+        margin-bottom: 1em;
+      }
+      div.sumbit input {
+        margin-left: 165px;
+      }
+      label.field{
+        display: block;
+        float: left;
+        margin-right: 15px;
+        width: 150px;
+        text-align: right;
+      }
+      input[type="text"], select, textarea{
+        width: 300px;
+        font: 18px verdana;
+        border: solid 2px #666;
+        background: #ada;
+      }
+
+       div.requried label.field {
+        font-weight: bold;
+       }
+      div.requried input, div.requried select {
+        background-color: #6a6;
+        border: #000;
+        font-weight: bold;
+      }
+    </style>
+   </head>
+   <body>
+    <h1>registrastion form </h1>
+    <form action="/register" method="post" 
+    enctype="multipart/form-data">
+    <div>
+  <label class="requried feild">gender</label>
+  <label><input type="radio" name="gender" value="male">male </label>
+  <label><input type="radio" name="gender" value="female">female </label>
+    </div>
+    <div>
+      <label class="requried feild">operating system</label>
+      <select id="os">
+        <option value="windows">windows</option>
+        <option value="mac os">mac os</option>
+        <option value="linux">linux</option>
+        <option value="other...">other...</option>
+      </select>
+    </div>
+    <div>
+      <label class="field">toys</label>
+      <label><input type="checkbox" name="toy" value="digicam"> Digtal camera</label>
+      <label><input type="checkbox" name="toy" value="phone"> smartphone </label>
+      <label><input type="checkbox" name="toy" value="tablet">tablet</label>
+    </div>
+    <div>
+    <label class="feild" for="portait">poritait</label>
+    <input type="file" id="portait">
+    </div>
+    <div>
+    <label class="field" for="bio">mini biography</label>
+    <textarea id="bio" rows="3" cols="30"></textarea>
+    </div>
+    <button><a href="file:///C:/Users/Lenovo/.vscode/name.html">register</a></button>
+  </form>
+ </body>
+</html>
